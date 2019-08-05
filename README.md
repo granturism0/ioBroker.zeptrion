@@ -20,7 +20,7 @@ Dimmer are handled as a Light Switch
 2. go to Adapter
 3. go to the Github SIgn on the top left
 4. go to the second tap
-5. enter https://github.com/swissglider/ioBroker.zeptrion
+5. enter https://github.com/granturism0/ioBroker.zeptrion
 6. click install
 
 7. after install finished, go again to Adapter
