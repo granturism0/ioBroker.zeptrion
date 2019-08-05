@@ -39,13 +39,11 @@ on the Configuration site you can configure:
 
 ### 0.0.1
 
-- (swissglider) initial release
+- initial release
 
 ## License
 
 The MIT License (MIT)
-
-Copyright (c) 2018 Swissglider <swissglider@github.com>
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
