@@ -1,18 +1,18 @@
 {
   "name": "iobroker.zeptrion",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "zeptrion",
   "author": {
-    "name": "Swissglider",
-    "email": "swissglider@github.com"
+    "name": "granturism0",
+    "email": "granturism0@github.com"
   },
   "contributors": [
     {
-      "name": "Swissglider",
-      "email": "swissglider@github.com"
+      "name": "granturism0",
+      "email": "granturism0@github.com"
     }
   ],
-  "homepage": "https://github.com/swissglider/ioBroker.zeptrion",
+  "homepage": "https://github.com/granturism0/ioBroker.zeptrion",
   "license": "MIT",
   "keywords": [
     "ioBroker",
@@ -22,7 +22,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/swissglider/ioBroker.zeptrion"
+    "url": "https://github.com/granturism0/ioBroker.zeptrion"
   },
   "dependencies": {
     "mdns-discovery": "^0.2.6",
@@ -40,7 +40,7 @@
     "test": "node node_modules/mocha/bin/mocha --exit"
   },
   "bugs": {
-    "url": "https://github.com/swissglider/ioBroker.zeptrion/issues"
+    "url": "https://github.com/granturism0/ioBroker.zeptrion/issues"
   },
   "readmeFilename": "README.md"
 }
