@@ -373,8 +373,8 @@ gulp.task('updatePackages', function (done) {
 
 gulp.task('rename', function ()  {
     var newname;
-    var author = 'Swissglider';
-    var email  = 'swissglider@github.com';
+    var author = 'granturism0';
+    var email  = 'granturism0@github.com';
     for (var a = 0; a < process.argv.length; a++) {
         if (process.argv[a] === '--name') {
             newname = process.argv[a + 1]
@@ -425,11 +425,11 @@ gulp.task('rename', function ()  {
             replacement: newname ? (newname[0].toUpperCase() + newname.substring(1)) : 'Zeptrion'
         },
         {
-            match: /Swissglider/g,
+            match: /granturism0/g,
             replacement: author
         },
         {
-            match: /swissglider@github.com/g,
+            match: /granturism0@github.com/g,
             replacement: email
         }
     ];
