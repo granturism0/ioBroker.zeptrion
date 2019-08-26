@@ -85,6 +85,9 @@ adapter.on('message', function (obj) {
     if(typeof obj === 'object' && obj.command === 'renew_all_websockets'){
         renew_all_websockets(adapter)
     }
+    if(typeof obj === 'object' && obj.command === 'close_websocket'){
+        close_websocket(adapter)
+    }
     if (typeof obj === 'object' && obj.message) {
         if (obj.command === 'send') {
             // e.g. send email or pushover or whatever
@@ -139,4 +142,8 @@ function update_all_state_switch(adapter){
 
 function renew_all_websockets(adapter){
     Device_Handler.renew_all_websockets(adapter)
+}
+
+function close_websocket(adapter){
+    Device_Handler.close_websocket(adapter)
 }

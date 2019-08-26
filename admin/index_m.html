@@ -72,6 +72,9 @@
     function renew_all_websockets(){
         sendTo(null, 'renew_all_websockets', null)
     }
+    function close_websocket(){
+        sendTo(null, 'close_websocket', null)
+    }
 </script>
 </head>
 <body>
@@ -102,6 +105,12 @@
                     <a class="waves-effect waves-light btn-small" onclick="renew_all_websockets()">
                         <i class="material-icons left">autorenew</i>
                         <span class="translate">reconnect_websockets</span>
+                    </a>
+                </div>
+                <div class="col s4 m4 l4">
+                    <a class="waves-effect waves-light btn-small" onclick="close_websocket()">
+                        <i class="material-icons left">autorenew</i>
+                        <span class="translate">close_websocket</span>
                     </a>
                 </div>
             </div>
