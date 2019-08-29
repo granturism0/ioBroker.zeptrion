@@ -20,7 +20,7 @@
         ],
         "readme": "https://github.com/ioBroker/ioBroker.zeptrion/blob/master/README.md",
         "localLink":                "%web_protocol%://%ip%:%web_port%/zeptrion/index.html",
-        "loglevel": "debug",
+        "loglevel": "info",
         "type": "lighting",
         "license": "MIT",
         "messagebox": true,
