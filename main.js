@@ -28,7 +28,7 @@ adapter.on('objectChange', function (id, obj) {
     //console.log('objectChange ' + id + ' ' + JSON.stringify(obj));
     if(!obj){
         if(id.startsWith('zeptrion.')){
-            Device_Handler.stop_websocket(id)
+            Device_Handler.stop_websocket(id, adapter)
         }
     }
     if(obj){
