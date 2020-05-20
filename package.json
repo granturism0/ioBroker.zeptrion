@@ -1,6 +1,6 @@
 {
   "name": "iobroker.zeptrion",
-  "version": "0.0.9",
+  "version": "0.0.10",
   "description": "zeptrion",
   "author": {
     "name": "granturism0",
@@ -27,12 +27,12 @@
   "dependencies": {
     "mdns-discovery": "^0.2.6",
     "request": "^2.88.0",
-    "ws": "^7.1.2",
-    "xml2js": "^0.4.19"
+    "ws": "^7.3.0",
+    "xml2js": "^0.4.23"
   },
   "devDependencies": {
     "gulp": "^4.0.2",
-    "mocha": "^6.2.0",
+    "mocha": "^7.1.2",
     "chai": "^4.2.0"
   },
   "main": "main.js",
