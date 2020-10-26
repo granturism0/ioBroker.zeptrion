@@ -130,6 +130,14 @@ function main() {
         adapter.log.debug('renew_all_websockets at midnight');
         renew_all_websockets(adapter); 
     } );
+
+    setImmediate(() => {
+        adapter.log.debug('renew_all_websockets');
+        renew_all_websockets(adapter);
+        setTimeout(function(){ cadapter.log.debug('short break'); }, 5 * 1000);
+        adapter.log.debug('update_all_state_switch');
+        update_all_state_switch(adapter);
+    });
 }
 
 function start_browse(adapter){
