@@ -114,11 +114,15 @@ function main() {
     // setImmediate(() => {
     //    update_all_state_switch(adapter);
     //  });
-    setInterval(() => {
+    /*setInterval(() => {
         adapter.log.debug('update_all_state_switch');
         renew_all_websockets(adapter);
         update_all_state_switch(adapter);
-    },60 * 1000);
+    },60 * 1000);*/
+    var schedule = require('node-schedule')
+    schedule.scheduleJob('myJob', '* * * * *', function() {
+        adapter.log.debug('update_all_state_switch') 
+    } );
 }
 
 function start_browse(adapter){
