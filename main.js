@@ -116,8 +116,9 @@ function main() {
     //  });
     setInterval(() => {
         adapter.log.debug('update_all_state_switch');
+        renew_all_websockets(adapter);
         update_all_state_switch(adapter);
-    },500);
+    },60 * 1000);
 }
 
 function start_browse(adapter){
