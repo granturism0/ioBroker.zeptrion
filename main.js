@@ -111,17 +111,24 @@ function main() {
         adapter.subscribeForeignObjects('enum*')
     }
     setTimeout(wait_to_enum, 5000)
-    // setImmediate(() => {
-    //    update_all_state_switch(adapter);
-    //  });
-    /*setInterval(() => {
-        adapter.log.debug('update_all_state_switch');
-        renew_all_websockets(adapter);
+
+    var updateTimer = adapter.config.updateSwitchStateTimer;
+    setInterval(() => {
+        adapter.log.debug('update_all_state_switch all ' + updateTimer + ' minutes');
+        // renew_all_websockets(adapter);
         update_all_state_switch(adapter);
-    },60 * 1000);*/
+    }, updateTimer * 60 * 1000);
+
     var schedule = require('node-schedule')
-    schedule.scheduleJob('myJob', '* * * * *', function() {
-        adapter.log.debug('update_all_state_switch') 
+
+    // schedule.scheduleJob('update_all_state_switch-Job', '* */30 * * *', function() {
+    //    adapter.log.debug('update_all_state_switch all 30 minutes');
+    //    update_all_state_switch(adapter); 
+    //} );
+
+    schedule.scheduleJob('renew_all_websockets-Job', '0 0 * * *', function() {
+        adapter.log.debug('renew_all_websockets at midnight');
+        renew_all_websockets(adapter); 
     } );
 }
 

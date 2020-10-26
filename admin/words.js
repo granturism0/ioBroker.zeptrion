@@ -15,6 +15,10 @@ systemDictionary = {
         "en": "dim light and stop after time (t)",
         "de": "Dimmer dimm-Zeit in Millisekunden"
     },
+    "updateSwitchStateTimer": {
+        "en": "update timer for the switch states in minutes",
+        "de": "Updatetimer für das Update der Schalter Stati in Minuten"
+    },
     "save_words": {
         "en": "on save adapter restarts with new config immediately",
         "de": "Der Adapter startet mit den neuen Konfigurationen nach den Speichern sofort neu"
