@@ -131,15 +131,14 @@ function main() {
         renew_all_websockets(adapter); 
     } );
 
-    setImmediate(() => {
-        adapter.log.debug('renew_all_websockets');
+    setTimeout(function(){
+        adapter.log.debug('renew_all_websockets first time after startup');
         renew_all_websockets(adapter);
-        adapter.log.debug('short break');
-        setTimeout(function(){
-            adapter.log.debug('update_all_state_switch');
-            update_all_state_switch(adapter);    
-        }, 5 * 1000);
-    });
+    }, 20 * 1000);
+    setTimeout(function(){
+        adapter.log.debug('update_all_state_switch first time after startup');
+        update_all_state_switch(adapter);
+    }, 40 * 1000);
 }
 
 function start_browse(adapter){
