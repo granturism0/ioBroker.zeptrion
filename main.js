@@ -138,7 +138,7 @@ function main() {
     setTimeout(function(){
         adapter.log.debug('update_all_state_switch first time after startup');
         update_all_state_switch(adapter);
-    }, 40 * 1000);
+    }, 30 * 1000);
 }
 
 function start_browse(adapter){
