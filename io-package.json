@@ -33,7 +33,7 @@
         "mdnsSearchTime": 10,
         "zeptrionBlindMoveTime": 500,
         "zeptrionDimmerDimTime": 500,
-        "updateSwitchStateTime": 30
+        "updateSwitchStateTimer": 60
     },
     "objects": []
 }
