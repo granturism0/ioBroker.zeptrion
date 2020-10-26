@@ -111,6 +111,13 @@ function main() {
         adapter.subscribeForeignObjects('enum*')
     }
     setTimeout(wait_to_enum, 5000)
+    // setImmediate(() => {
+    //    update_all_state_switch(adapter);
+    //  });
+    setInterval(() => {
+        adapter.log.debug('update_all_state_switch');
+        update_all_state_switch(adapter);
+    },500);
 }
 
 function start_browse(adapter){
